@@ -34,7 +34,7 @@ A small and portable USB-C power supply for Eurorack modules.
 
 ## Where to buy the PCB?
 
-You can directly contact me via email: [asep@nanasound.com](mailto:asep@nanasound.com).
+You can directly contact me via email: [asep@nanassound.com](mailto:asep@nanassound.com).
 
 If I still have some PCBs with pre-assembled SMD components left, I will sell them for 14€. You need to source DKM10E-12, 10 pin unshrouded header, LED, 4A fuse, and fuse holder yourself.
 

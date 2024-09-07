@@ -1,9 +1,9 @@
 # Nanas Sound's Eurorack Modules
 
 Modules made by Nanas Sound.
-- [Mini](https://github.com/NanasSound/eurorack-nanassound/tree/main/Mini): USB-C power supply
-- [Rohkem](https://github.com/NanasSound/eurorack-nanassound/tree/main/Rohkem): 1x7 or 2x3 passive signal multiplier
-- [Uksed](https://github.com/NanasSound/eurorack-nanassound/tree/main/Uksed): 4-channels audio input module
+- [Mini](https://github.com/bepitulaz/eurorack-nanassound/tree/main/Mini): USB-C power supply
+- [Rohkem](https://github.com/bepitulaz/eurorack-nanassound/tree/main/Rohkem): 1x7 or 2x3 passive signal multiplier
+- [Uksed](https://github.com/bepitulaz/eurorack-nanassound/tree/main/Uksed): 4-channels audio input module
 
 ## License
 
