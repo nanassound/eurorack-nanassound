@@ -17,7 +17,7 @@ Contact: [asep@nanassound.com](mailto:asep@nanassound.com)
 
 ## Guidelines for derivative works
 
-**Nanas Sound** is a trademark of [Nanas Sound OÜ](https://ariregister.rik.ee/est/company/16028176/Nanas-Sound-OÜ).
+**Nanas Sound** is a business name of [Nanas Sound OÜ](https://ariregister.rik.ee/est/company/16028176/Nanas-Sound-OÜ).
 
 You should not use Nanas Sound name, logo, or any other identifiers on your derivative works you create from files in this repository.
 
