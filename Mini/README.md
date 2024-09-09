@@ -34,10 +34,7 @@ A small and portable USB-C power supply for Eurorack modules.
 
 ## Where to buy the PCB?
 
-You can directly contact me via email: [asep@nanassound.com](mailto:asep@nanassound.com).
+You can buy the PCB from my store on [Lectronz](https://lectronz.com/stores/nanassound).
 
-If I still have some PCBs with pre-assembled SMD components left, I will sell them for 14€. You need to source DKM10E-12, 10 pin unshrouded header, LED, 4A fuse, and fuse holder yourself.
+Before ordering, make sure you can source [Mean Well DKM10E-12](https://www.meanwell-web.com/en-gb/dc-dc-converter-pcb-mount-input-4-7-9vdc-dual-dkm10e--12) by yourself. 
 
-I also can ship the PCBs inside Europe only.
-
-Currently, I'm still setting up my online store.
