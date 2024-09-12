@@ -1,0 +1,6 @@
+[submodule "Mikronit/pico-ssd1306"]
+	path = Mikronit/pico-ssd1306
+	url = https://github.com/Harbys/pico-ssd1306.git
+[submodule "Mikronit/pico-extras"]
+	path = Mikronit/pico-extras
+	url = https://github.com/raspberrypi/pico-extras.git
