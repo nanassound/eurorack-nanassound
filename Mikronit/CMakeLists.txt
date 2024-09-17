@@ -26,6 +26,7 @@ endif()
 set(PICO_BOARD pico2 CACHE STRING "Board type")
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
+set(PICO_EXTRAS_PATH ${CMAKE_CURRENT_LIST_DIR}/pico-extras)
 include(pico_sdk_import.cmake)
 include(pico-extras/external/pico_extras_import.cmake)
 
@@ -51,7 +52,13 @@ pico_enable_stdio_usb(Mikronit 1)
 
 # Add the standard library to the build
 target_link_libraries(Mikronit
-        pico_stdlib)
+        pico_stdlib
+        pico_audio_i2s
+        hardware_dma
+        hardware_irq
+        hardware_sync
+        hardware_gpio
+)
 
 # Add the standard include files to the build
 target_include_directories(Mikronit PRIVATE
@@ -71,7 +78,6 @@ target_link_libraries(Mikronit
         hardware_i2c
         hardware_pio
         pico_ssd1306
-        pico_audio_i2s
         )
 
 pico_add_extra_outputs(Mikronit)
