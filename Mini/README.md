@@ -2,7 +2,7 @@
 
 A small and portable USB-C power supply for Eurorack modules.
 
-- It takes 5V input from USB-C port and outputs dual supply +/- 12V.
+- It takes 5V input from USB-C port and outputs dual supply +/- 12V and 5V.
 - The main component that converts the voltage is [Mean Well DKM10E-12](https://www.meanwell-web.com/en-gb/dc-dc-converter-pcb-mount-input-4-7-9vdc-dual-dkm10e--12).
 - The output current according to DKM10E-12 datasheet is ±0 ~ 416mA.
 - The input voltage range is 4.7V ~ 9V.
