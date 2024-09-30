@@ -37,12 +37,12 @@ A small and portable USB-C power supply for Eurorack modules.
 
 ## Where to buy pre-assembled Mini?
 
+You can buy the pre-assembled of Mini 2.0 from my store on [Elecrow](https://www.elecrow.com/mini-usb-c-power-supply-for-eurorack.html). I'm doing the pre-sale until October 2024.
+
 This is 3D render of the front and back of the Mini 2.0. The real PCB is still on the manufacturing process.
 
 ![Mini front](V2.0/front-side.jpeg)
 ![Mini back](V2.0/back-side.jpeg)
-
-You can buy the pre-assembled of Mini 2.0 from my store on [Elecrow](https://www.elecrow.com/mini-usb-c-power-supply-for-eurorack.html). I'm doing the pre-sale until October 2024.
 
 ## Photos from the test of Mini 1.0
 
