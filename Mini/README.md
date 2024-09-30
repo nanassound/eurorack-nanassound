@@ -1,7 +1,5 @@
 # Mini: USB-C Power Supply
 
-![Mini](IMG_6458.jpeg)
-
 A small and portable USB-C power supply for Eurorack modules.
 
 - It takes 5V input from USB-C port and outputs dual supply +/- 12V.
@@ -9,7 +7,17 @@ A small and portable USB-C power supply for Eurorack modules.
 - The output current according to DKM10E-12 datasheet is ±0 ~ 416mA.
 - The input voltage range is 4.7V ~ 9V.
 
-## Design decisions
+## Design decisions and changes log
+
+#### Version 2.0
+- Make the PCB dimension to fit 3U height and 6HP width, so it can be mounted on a 3U rack.
+- Replace 10 pin power header with 16 pin power header and pass 5V from USB-C to the module.
+- Replace the glass fuse with 4A PPTC (resettable fuse) to protect the circuit from over current.
+- Use SMT components as much as possible to make the layout cleaner.
+
+#### Version 1.0
+
+![Mini](V1.0/IMG_6458.jpeg)
 
 - To allow Mini to use 10 pin power header and keep the design small, it **does not** pass 5V. If the Eurorack module requires 5V, then it's the responsibility of the module to provide it by converting the voltage.
 - I add 4A fuse as a safety measure.
@@ -27,14 +35,16 @@ A small and portable USB-C power supply for Eurorack modules.
 - Doepfer A-111-6
 - Crea8audio Function Junction
 
-## Photos from the test
+## Where to buy pre-assembled Mini?
 
-![Power bank test](IMG_6454.jpeg)
-![Laptop test](IMG_6455.jpeg)
+This is 3D render of the front and back of the Mini 2.0. The real PCB is still on the manufacturing process.
 
-## Where to buy the PCB?
+![Mini front](V2.0/front-side.jpeg)
+![Mini back](V2.0/back-side.jpeg)
 
-You can buy the PCB from my store on [Lectronz](https://lectronz.com/stores/nanassound).
+You can buy the pre-assembled of Mini 2.0 from my store on [Elecrow](https://www.elecrow.com/mini-usb-c-power-supply-for-eurorack.html). I'm doing the pre-sale until October 2024.
 
-Before ordering, make sure you can source [Mean Well DKM10E-12](https://www.meanwell-web.com/en-gb/dc-dc-converter-pcb-mount-input-4-7-9vdc-dual-dkm10e--12) by yourself. 
+## Photos from the test of Mini 1.0
 
+![Power bank test](V1.0/IMG_6454.jpeg)
+![Laptop test](V1.0/IMG_6455.jpeg)
