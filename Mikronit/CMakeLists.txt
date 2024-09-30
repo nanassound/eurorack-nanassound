@@ -30,6 +30,13 @@ set(PICO_EXTRAS_PATH ${CMAKE_CURRENT_LIST_DIR}/pico-extras)
 include(pico_sdk_import.cmake)
 include(pico-extras/external/pico_extras_import.cmake)
 
+add_compile_definitions(PICO_RP2350=1)
+
+set(PICO_PLATFORM rp2350)
+set(FREERTOS_KERNEL_PATH ${CMAKE_CURRENT_SOURCE_DIR}/FreeRTOS-Kernel CACHE PATH "Path to FreeRTOS kernel")
+set(FREERTOS_KERNEL_RP2040_RELATIVE_PATH "portable/ThirdParty/GCC/RP2040" CACHE STRING "")
+include(FreeRTOS_Kernel_import.cmake)
+
 project(Mikronit C CXX ASM)
 
 # Initialise the Raspberry Pi Pico SDK
@@ -53,6 +60,8 @@ pico_enable_stdio_usb(Mikronit 1)
 # Add the standard library to the build
 target_link_libraries(Mikronit
         pico_stdlib
+        pico_multicore
+        pico_async_context_freertos
         pico_audio_i2s
         hardware_dma
         hardware_irq
@@ -73,13 +82,59 @@ message(STATUS "pico_ssd1306 target: ${pico_ssd1306}")
 # Pico extras
 add_subdirectory(pico-extras)
 
+# FreeRTOS
+# Create freertos_config target
+add_library(freertos_config INTERFACE)
+
+target_include_directories(freertos_config SYSTEM
+    INTERFACE
+        ${CMAKE_CURRENT_SOURCE_DIR}/freertos_config  # The directory containing FreeRTOSConfig.h
+)
+
+target_compile_definitions(freertos_config
+    INTERFACE
+        projCOVERAGE_TEST=0
+)
+
+# Set the FREERTOS_CONFIG variable
+set(FREERTOS_CONFIG freertos_config CACHE STRING "")
+set(FREERTOS_PORT GCC_ARM_CM33_NTZ_NONSECURE CACHE STRING "")
+set(FREERTOS_PORTABLE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040 CACHE STRING "")
+
+# Now add FreeRTOS-Kernel subdirectory
+add_subdirectory(FreeRTOS-Kernel)
+
+# Include FreeRTOS headers
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${CMAKE_CURRENT_LIST_DIR}/include
+    ${CMAKE_CURRENT_LIST_DIR}/FreeRTOS-Kernel/include
+    ${CMAKE_CURRENT_LIST_DIR}/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040
+    )
+
 # Add any user requested libraries
-target_link_libraries(Mikronit 
+target_link_libraries(Mikronit
+        freertos_config
+        FreeRTOS-Kernel
+        FreeRTOS-Kernel-Heap4
         hardware_i2c
         hardware_pio
         pico_ssd1306
-        )
+)
+
+target_compile_definitions(Mikronit PRIVATE
+    configNUMBER_OF_CORES=2
+)
+
+if(PICO_CYW43_SUPPORTED)
+    # For LED support on Pico W
+    target_link_libraries(Mikronit PRIVATE
+        pico_cyw43_arch_none
+    )
+endif()
 
 pico_add_extra_outputs(Mikronit)
 
 add_dependencies(Mikronit pico_ssd1306)
+
+add_compile_options(-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16)
+add_link_options(-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16)
