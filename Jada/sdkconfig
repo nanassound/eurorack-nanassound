@@ -542,14 +542,16 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
-# Example Configuration
+# Jada Configuration
 #
 CONFIG_EXAMPLE_LCD_CONTROLLER_SSD1306=y
 # CONFIG_EXAMPLE_LCD_CONTROLLER_SH1107 is not set
 CONFIG_EXAMPLE_SSD1306_HEIGHT_64=y
 # CONFIG_EXAMPLE_SSD1306_HEIGHT_32 is not set
 CONFIG_EXAMPLE_SSD1306_HEIGHT=64
-# end of Example Configuration
+CONFIG_ROT_ENC_A_GPIO=21
+CONFIG_ROT_ENC_B_GPIO=22
+# end of Jada Configuration
 
 #
 # Compiler options

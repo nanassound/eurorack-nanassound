@@ -5,13 +5,9 @@
  */
 
 #include "lvgl.h"
+#include "lcd_menu.h"
 #include "icon_piano.c"
 #include "icon_metronome.c"
-
-LV_FONT_DECLARE(lv_font_montserrat_12);
-LV_FONT_DECLARE(lv_font_montserrat_14);
-LV_FONT_DECLARE(lv_font_montserrat_16);
-
 
 void scale_selector(lv_disp_t *disp)
 {
