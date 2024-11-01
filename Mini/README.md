@@ -10,6 +10,9 @@ A small and portable USB-C power supply for Eurorack modules.
 ## Design decisions and changes log
 
 #### Version 2.0
+
+![Mini 2.0](V2.0/Mini-v2.jpg)
+
 - Make the PCB dimension to fit 3U height and 6HP width, so it can be mounted on a 3U rack.
 - Replace 10 pin power header with 16 pin power header and pass 5V from USB-C to the module.
 - Replace the glass fuse with 4A PPTC (resettable fuse) to protect the circuit from over current.
@@ -35,14 +38,9 @@ A small and portable USB-C power supply for Eurorack modules.
 - Doepfer A-111-6
 - Crea8audio Function Junction
 
-## Where to buy pre-assembled Mini?
+## Where to buy Mini?
 
-You can buy the pre-assembled of Mini 2.0 from my store on [Elecrow](https://www.elecrow.com/mini-usb-c-power-supply-for-eurorack.html). I'm doing the pre-sale until October 2024.
-
-This is the assembled front and back of the Mini 2.0.
-
-![Mini front](V2.0/front-side.jpeg)
-![Mini back](V2.0/back-side.jpeg)
+You can buy the fully assembled Mini 2.0 from my store on [Elecrow](https://www.elecrow.com/mini-usb-c-power-supply-for-eurorack.html). I'm doing the pre-sale until October 2024.
 
 ## Photos from the test of Mini 1.0
 
