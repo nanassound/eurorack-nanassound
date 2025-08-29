@@ -1,0 +1,11 @@
+*Reference;*Manufacturer Part number;*QTY;Description;Purchase Link
+J1;2.54-2*8P;1;16 pins IDC header;https://www.lcsc.com/product-detail/IDC-Connectors_BOOMELE-Boom-Precision-Elec-2-54-2-8P_C3406.html
+J2, J3, J4, J5;PJ-3001F;4;3.5mm mono phone jack;https://www.taydaelectronics.com/hardware/3-5mm-plugs-jacks/pj-3001f-3-5-mm-mono-phone-jack.html
+C1, C2;0402B104K250NT;2;100nF 25V;https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_FH-Guangdong-Fenghua-Advanced-Tech-0402B104K250NT_C56392.html
+C3, C4;UV2E100M1010;2;10uF electrolyte caps;https://www.lcsc.com/product-detail/Aluminum-Electrolytic-Capacitors-SMD_Honor-Elec-UV2E100M1010_C98552.html
+C5, C7;CL05A105KA5NQNC;2;1uF 25V;https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.html
+C6, C8;CC0402JRNPO8BN330;2;33pF 25V;https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0402JRNPO8BN330_C526997.html
+R1, R3;1206W4F1002T5E;2;10k 250mW;https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-1206W4F1002T5E_C17902.html
+R2, R4;FRC1206J102 TS;2;1k 250mW;https://www.lcsc.com/product-detail/Chip-Resistor-Surface-Mount_FOJAN-FRC1206J102-TS_C2907440.html
+IC1;TL072CDR;1;TL072 OpAmp;https://www.lcsc.com/product-detail/FET-Input-Amplifiers_Texas-Instruments-TL072CDR_C67473.html
+RV1, RV2;RD901F-40-15K-B100K;2;100k linear pot;https://www.taydaelectronics.com/100k-ohm-linear-taper-potentiometer-knurled-plastic-spline-shaft-pcb-9mm.html
