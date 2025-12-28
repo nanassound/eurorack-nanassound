@@ -40,7 +40,7 @@ A small and portable USB-C power supply for Eurorack modules.
 
 ## Where to buy Mini?
 
-If you are in Europe, you can buy the fully assembled Mini 2.0 from my store on [Lectronz](https://lectronz.com/products/mini-eurorack-usb-c-power-supply).
+If you are in Europe, you can buy the fully assembled Mini 2.0 from my store on [Reverb](https://reverb.com/en-ee/item/92160894-nanas-sound-mini-usb-c-power-supply).
 
 For the customer outside of Europe, you can buy it from a shared project on [PCBWay](https://www.pcbway.com/project/shareproject/Mini_Eurorack_modular_synth_USB_C_power_supply_29aeece2.html) or [Elecrow](https://www.elecrow.com/sharepj/mini-eurorack-modular-synth-usb-c-power-supply-988.html).
 
