@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "3"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -730,7 +730,7 @@
       {
         "filename": "V3.0.kicad_sch",
         "name": "V3.0",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "dca28fe4-d3d4-4923-8da1-5f3d9db1364a"
       }
     ],
     "used_designators": "",
@@ -739,7 +739,7 @@
   "sheets": [
     [
       "dca28fe4-d3d4-4923-8da1-5f3d9db1364a",
-      "Root"
+      "V3.0"
     ]
   ],
   "text_variables": {},
