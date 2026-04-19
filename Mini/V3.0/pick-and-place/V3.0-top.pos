@@ -1,0 +1,22 @@
+### Footprint positions - created on 2026-01-15T19:24:23+0200 ###
+### Printed by KiCad version 9.0.6
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val               Package                    PosX       PosY       Rot  Side
+C1        10uF              CP_Elec_6.3x7.7        150.5500   -49.0000  180.0000  top
+C2        100nF             C_0603_1608Metric      150.4750   -56.0000  -90.0000  top
+C3        10nF              C_0603_1608Metric      155.2500   -55.9750  -90.0000  top
+C4        100uF             CP_Elec_6.3x7.7        150.2500   -92.5000  -90.0000  top
+C5        100nF             C_0603_1608Metric      150.2250   -99.7500    0.0000  top
+C6        100uF             CP_Elec_6.3x7.7        159.0000   -92.5000  -90.0000  top
+C7        100nF             C_0603_1608Metric      158.9750   -99.7500    0.0000  top
+C8        100nF             C_0603_1608Metric      142.2500  -118.7500  180.0000  top
+D1        SMBJ5.0A          DIOM5436X244N          150.5500   -41.7500  180.0000  top
+F1        Fuse_2A           Fuse_1812_4532Metric   160.5000   -54.7500  -90.0000  top
+J1        UJC-HP2-3-SMT-TR  UJCHP23SMTTR           136.7100   -50.4300  -90.0000  top
+R1        5.1kΩ            R_1206_3216Metric      144.2875   -45.2500  180.0000  top
+R2        5.1kΩ            R_1206_3216Metric      144.2875   -55.7500  180.0000  top
+R3        2.2kΩ            R_1206_3216Metric      144.0000  -102.5375  -90.0000  top
+R4        2.2kΩ            R_1206_3216Metric      144.0000   -96.9975  -90.0000  top
+R5        680Ω             R_1206_3216Metric      144.0000   -91.2875  -90.0000  top
+## End

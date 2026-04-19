@@ -1,2 +1,15 @@
+# macOS
 .DS_Store
-/*/build
+._*
+
+# Windows
+Thumbs.db
+
+# KiCad auto-generated cache and backups
+fp-info-cache
+*-backups/
+_autosave-*
+*.lck
+
+# Editor local history
+.history/
