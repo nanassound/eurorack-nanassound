@@ -11,9 +11,9 @@ Hardware is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/b
 
 By [Asep Bagja](https://www.asepbagja.com/)
 
-Contact: [asep@nanassound.com](mailto:asep@nanassound.com)
+Contact: [asep@nanas.ee](mailto:asep@nanas.ee)
 
-© 2024
+© 2026 Nanas Sound OÜ
 
 ## Guidelines for derivative works
 
