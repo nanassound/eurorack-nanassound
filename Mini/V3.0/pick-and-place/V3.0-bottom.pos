@@ -1,0 +1,13 @@
+### Footprint positions - created on 2026-01-15T19:24:23+0200 ###
+### Printed by KiCad version 9.0.6
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val                            Package                                                  PosX       PosY       Rot  Side
+D2        L_12V                          LED_D2.0mm_W4.8mm_H2.5mm_FlatTop                     137.7500  -101.4600  -90.0000  bottom
+D3        L_5V                           LED_D2.0mm_W4.8mm_H2.5mm_FlatTop                     137.7500   -89.9600  -90.0000  bottom
+D4        L_-12V                         LED_D2.0mm_W4.8mm_H2.5mm_FlatTop                     137.7500   -95.7100  -90.0000  bottom
+J2        Eurorack_Power_16pin_Shrouded  Pins_2x08_2.54mm_TH_EuroPower_Shrouded_reducedsilk   148.8600  -110.9800  -90.0000  bottom
+J3        Eurorack_Power_16pin_Shrouded  Pins_2x08_2.54mm_TH_EuroPower_Shrouded_reducedsilk   148.8600  -126.2700  -90.0000  bottom
+J6        VN02A1500000G                  VN02A1500000G                                        159.7500   -48.7500   90.0000  bottom
+PS1       DKM10E-12                      DKM10E12                                             152.0000   -63.2500    0.0000  bottom
+## End
