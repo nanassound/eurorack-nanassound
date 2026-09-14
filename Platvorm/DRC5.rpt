@@ -1,0 +1,191 @@
+** Drc report for Platvorm.kicad_pcb **
+** Created on 2026-09-14T13:33:04 **
+** Report includes: Errors, Warnings **
+
+** Found 23 DRC violations **
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(72.3000 mm, 123.8100 mm): Track [VBUS] on F.Cu, length 2.8000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(63.4000 mm, 122.7500 mm): Track [VBUS] on F.Cu, length 1.9000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(67.5000 mm, 123.8100 mm): Track [VBUS] on F.Cu, length 2.8000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(60.8000 mm, 118.0000 mm): Track [VBUS] on F.Cu, length 1.8000 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(80.8625 mm, 106.5500 mm): Via [/USB & UART Bridge/RTS] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(80.0625 mm, 109.5500 mm): Via [/USB & UART Bridge/Q2B] on F.Cu - B.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(70.6500 mm, 123.8100 mm): Track [/USB & UART Bridge/USB_DP] on F.Cu, length 2.7000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(69.6500 mm, 123.8100 mm): Track [/USB & UART Bridge/USB_DP] on F.Cu, length 2.7000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(69.1500 mm, 123.8100 mm): Track [/USB & UART Bridge/USB_DM] on F.Cu, length 1.9500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(70.1500 mm, 123.8100 mm): Track [/USB & UART Bridge/USB_DM] on F.Cu, length 1.9500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(68.4900 mm, 86.0000 mm): Track [/Power Supply/FB] on F.Cu, length 1.8000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(70.6900 mm, 86.0000 mm): Track [/Power Supply/FB] on F.Cu, length 1.8000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(65.5500 mm, 90.9375 mm): Track [/Power Supply/FB] on F.Cu, length 1.1375 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(63.2200 mm, 91.9000 mm): Track [/Power Supply/BOOT] on F.Cu, length 2.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(76.9900 mm, 120.4000 mm): Track [/USB & UART Bridge/CC2] on F.Cu, length 1.8000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(71.6500 mm, 123.8100 mm): Track [/USB & UART Bridge/CC2] on F.Cu, length 2.5500 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(80.8625 mm, 104.6500 mm): Via [/USB & UART Bridge/Q1B] on F.Cu - B.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(68.6500 mm, 123.8100 mm): Track [/USB & UART Bridge/CC1] on F.Cu, length 2.5500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(76.9900 mm, 123.0000 mm): Track [/USB & UART Bridge/CC1] on F.Cu, length 2.2000 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(66.9500 mm, 55.3050 mm): Via [IO4] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(84.4500 mm, 65.4650 mm): Via [IO19] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(84.4500 mm, 62.9250 mm): Via [IO21] on F.Cu - B.Cu
+[connection_width]: Copper connection too narrow (board setup constraints minimum connection width 0.2000 mm; actual 0.1875 mm) (F.Cu)
+    Rule: board setup constraints; warning
+    @(68.0250 mm, 62.5250 mm): Track [/ESP32-C6 Module/IO8] on F.Cu, length 2.8500 mm
+    @(68.7500 mm, 62.9250 mm): Pad 10 [/ESP32-C6 Module/IO8] of U1 on F.Cu
+
+** Found 24 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(70.3650 mm, 114.5875 mm): Pad 4 [+3V3] of U4 on F.Cu
+    @(66.5550 mm, 109.1125 mm): Via [+3V3] on F.Cu - B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(65.5500 mm, 93.2000 mm): Pad 2 [GND] of C1 on F.Cu
+    @(67.4500 mm, 88.6625 mm): Track [GND] on F.Cu, length 1.1314 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(78.5500 mm, 92.2000 mm): Pad 2 [GND] of C3 on F.Cu
+    @(86.7700 mm, 91.2700 mm): PTH pad 14 [GND] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(82.0000 mm, 115.5625 mm): Pad 1 [/Power Supply/VOUT_PRE] of FB1 on F.Cu
+    @(76.6500 mm, 92.2000 mm): Pad 1 [/Power Supply/VOUT_PRE] of C3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(60.8000 mm, 118.0000 mm): Track [VBUS] on F.Cu, length 1.8000 mm
+    @(63.4000 mm, 122.7500 mm): Track [VBUS] on F.Cu, length 1.9000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(67.5000 mm, 123.8100 mm): Track [VBUS] on F.Cu, length 2.8000 mm
+    @(65.2750 mm, 117.5250 mm): Track [VBUS] on B.Cu, length 1.8500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(72.3000 mm, 123.8100 mm): Track [VBUS] on F.Cu, length 2.8000 mm
+    @(67.5000 mm, 123.8100 mm): Track [VBUS] on F.Cu, length 2.8000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(78.6625 mm, 106.5500 mm): Track [/USB & UART Bridge/RTS] on F.Cu, length 2.2000 mm
+    @(74.6000 mm, 106.3100 mm): Pad 1 [/USB & UART Bridge/RTS] of R6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(74.6000 mm, 105.2900 mm): Pad 2 [/USB & UART Bridge/Q2B] of R6 on F.Cu
+    @(77.8625 mm, 109.5500 mm): Track [/USB & UART Bridge/Q2B] on F.Cu, length 2.2000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(69.6500 mm, 123.8100 mm): Track [/USB & UART Bridge/USB_DP] on F.Cu, length 2.7000 mm
+    @(70.6500 mm, 123.8100 mm): Track [/USB & UART Bridge/USB_DP] on F.Cu, length 2.7000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(69.6500 mm, 123.8100 mm): Track [/USB & UART Bridge/USB_DP] on F.Cu, length 2.7000 mm
+    @(68.1500 mm, 119.5375 mm): Pad 3 [/USB & UART Bridge/USB_DP] of U3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(66.2500 mm, 119.5375 mm): Pad 1 [/USB & UART Bridge/USB_DM] of U3 on F.Cu
+    @(69.1500 mm, 123.8100 mm): Track [/USB & UART Bridge/USB_DM] on F.Cu, length 1.9500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(69.1500 mm, 123.8100 mm): Track [/USB & UART Bridge/USB_DM] on F.Cu, length 1.9500 mm
+    @(70.1500 mm, 123.8100 mm): Track [/USB & UART Bridge/USB_DM] on F.Cu, length 1.9500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(64.1800 mm, 91.9000 mm): Pad 2 [/Power Supply/SW] of C7 on F.Cu
+    @(66.9750 mm, 89.3750 mm): Track [/Power Supply/SW] on B.Cu, length 1.4500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(68.4900 mm, 86.0000 mm): Track [/Power Supply/FB] on F.Cu, length 1.8000 mm
+    @(65.5500 mm, 90.9375 mm): Track [/Power Supply/FB] on F.Cu, length 1.1375 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(70.6900 mm, 86.0000 mm): Track [/Power Supply/FB] on F.Cu, length 1.8000 mm
+    @(68.4900 mm, 86.0000 mm): Track [/Power Supply/FB] on F.Cu, length 1.8000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(63.2200 mm, 91.9000 mm): Track [/Power Supply/BOOT] on F.Cu, length 2.0000 mm
+    @(67.4500 mm, 90.9375 mm): Pad 6 [/Power Supply/BOOT] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(76.9900 mm, 120.4000 mm): Track [/USB & UART Bridge/CC2] on F.Cu, length 1.8000 mm
+    @(71.6500 mm, 123.8100 mm): Track [/USB & UART Bridge/CC2] on F.Cu, length 2.5500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(75.9000 mm, 102.4900 mm): Pad 2 [/USB & UART Bridge/Q1B] of R5 on F.Cu
+    @(78.6625 mm, 104.6500 mm): Track [/USB & UART Bridge/Q1B] on F.Cu, length 2.2000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(76.9900 mm, 123.0000 mm): Track [/USB & UART Bridge/CC1] on F.Cu, length 2.2000 mm
+    @(68.6500 mm, 123.8100 mm): Track [/USB & UART Bridge/CC1] on F.Cu, length 2.5500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(84.2300 mm, 98.8900 mm): PTH pad 7 [IO4] of J2
+    @(68.7500 mm, 55.3050 mm): Track [IO4] on F.Cu, length 1.8000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(68.7500 mm, 65.4650 mm): Pad 12 [IO11] of U1 on F.Cu
+    @(86.7700 mm, 93.8100 mm): PTH pad 12 [IO11] of J2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(86.7700 mm, 86.1900 mm): PTH pad 18 [IO19] of J2
+    @(86.2500 mm, 65.4650 mm): Track [IO19] on F.Cu, length 1.8000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(86.7700 mm, 83.6500 mm): PTH pad 20 [IO21] of J2
+    @(86.2500 mm, 62.9250 mm): Track [IO21] on F.Cu, length 1.8000 mm
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Courtyards overlap
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Pad net doesn't match schematic
+    - Silkscreen clearance
+    - Silkscreen clipped by solder mask
+    - Silkscreen clipped by board edge
+    - Padstack is questionable
+    - Footprint component type doesn't match footprint pads
+    - Footprint doesn't match copy in library
+
+** End of Report **
