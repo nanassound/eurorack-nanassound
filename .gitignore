@@ -22,3 +22,6 @@ DRC*.rpt
 *.net
 *.dsn
 *.ses
+
+# KiCad local settings
+*.kicad_prl
