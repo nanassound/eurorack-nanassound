@@ -25,3 +25,6 @@ DRC*.rpt
 
 # KiCad local settings
 *.kicad_prl
+
+# Regenerable analyzer output (kicad-happy)
+EuroPlatvorm/analysis/
