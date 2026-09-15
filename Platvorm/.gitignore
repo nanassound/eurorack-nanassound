@@ -11,3 +11,12 @@ __pycache__/
 
 # Session state
 capability_mode.json
+
+# Working artifacts (regenerable)
+DRC*.rpt
+*.log
+*.err
+*.bak
+*.net
+*.dsn
+*.ses
