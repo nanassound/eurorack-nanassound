@@ -13,3 +13,18 @@ _autosave-*
 
 # Editor local history
 .history/
+
+# KiCad working artifacts (regenerable, do not commit)
+DRC*.rpt
+*.log
+*.err
+*.bak
+*.net
+*.dsn
+*.ses
+
+# KiCad local settings
+*.kicad_prl
+
+# Regenerable analyzer output (kicad-happy)
+EuroPlatvorm/analysis/

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "platvorm_custom")(type "KiCad")(uri "${KIPRJMOD}/footprints/platvorm_custom.pretty")(options "")(descr "Platvorm custom footprints"))
+)
