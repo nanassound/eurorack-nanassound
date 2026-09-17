@@ -5371,7 +5371,7 @@
 		)
 		(uuid "ff92a347-f1ed-4a7e-8924-e04fcbdb4762")
 	)
-	(label "GPIO19"
+	(label "GPIO22"
 		(at 130.81 139.7 0)
 		(effects
 			(font
@@ -5411,7 +5411,7 @@
 		)
 		(uuid "0ca5ce65-cce9-4a63-92ea-baa8c91ec8cd")
 	)
-	(label "GPIO22"
+	(label "GPIO19"
 		(at 130.81 147.32 0)
 		(effects
 			(font
@@ -5451,7 +5451,7 @@
 		)
 		(uuid "1568c38d-1a9c-4b9b-88c0-86723fd0702c")
 	)
-	(label "GPIO8"
+	(label "GPIO11"
 		(at 130.81 160.02 0)
 		(effects
 			(font
@@ -5481,7 +5481,7 @@
 		)
 		(uuid "22cb0039-0962-495b-967b-41fcfe64f0e3")
 	)
-	(label "GPIO16"
+	(label "GPIO17"
 		(at 130.81 152.4 0)
 		(effects
 			(font
@@ -5501,7 +5501,7 @@
 		)
 		(uuid "256942e8-ab52-4748-b935-dc6883ef54ce")
 	)
-	(label "GPIO17"
+	(label "GPIO16"
 		(at 130.81 154.94 0)
 		(effects
 			(font
@@ -5521,7 +5521,7 @@
 		)
 		(uuid "35aa9b52-96c1-4aa0-bc6c-601829c96c88")
 	)
-	(label "GPIO23"
+	(label "GPIO18"
 		(at 130.81 149.86 0)
 		(effects
 			(font
@@ -5531,7 +5531,7 @@
 		)
 		(uuid "360512e1-46d3-4115-ae8b-986e28ca6f04")
 	)
-	(label "GPIO15"
+	(label "USB_DM"
 		(at 113.03 167.64 180)
 		(effects
 			(font
@@ -5591,7 +5591,7 @@
 		)
 		(uuid "472ae584-6241-4249-8c25-20f055eb9089")
 	)
-	(label "GPIO21"
+	(label "GPIO20"
 		(at 130.81 144.78 0)
 		(effects
 			(font
@@ -5601,7 +5601,7 @@
 		)
 		(uuid "47d8ede1-9138-40c9-8630-51308410d9e2")
 	)
-	(label "GPIO18"
+	(label "GPIO23"
 		(at 130.81 137.16 0)
 		(effects
 			(font
@@ -5651,7 +5651,7 @@
 		)
 		(uuid "592d14f0-ecdb-4934-b810-3a7b20ad965a")
 	)
-	(label "GPIO20"
+	(label "GPIO21"
 		(at 130.81 142.24 0)
 		(effects
 			(font
@@ -5731,7 +5731,7 @@
 		)
 		(uuid "6c7414da-4d7f-48ee-a355-f980b19bdc85")
 	)
-	(label "GPIO9"
+	(label "GPIO15"
 		(at 130.81 157.48 0)
 		(effects
 			(font
@@ -5741,7 +5741,7 @@
 		)
 		(uuid "7a79ca5f-db9b-4eef-a447-94d80d345b96")
 	)
-	(label "GPIO10"
+	(label "USB_DP"
 		(at 113.03 165.1 180)
 		(effects
 			(font
@@ -5861,7 +5861,7 @@
 		)
 		(uuid "bb5e5490-8501-416b-b63b-c18de13a32f1")
 	)
-	(label "GPIO11"
+	(label "GPIO10"
 		(at 130.81 162.56 0)
 		(effects
 			(font
@@ -5921,7 +5921,7 @@
 		)
 		(uuid "ea676c63-285d-48af-9522-c4fd3c4c7a72")
 	)
-	(label "USB_DP"
+	(label "GPIO8"
 		(at 130.81 167.64 0)
 		(effects
 			(font
@@ -5931,7 +5931,7 @@
 		)
 		(uuid "f3767b28-6fe0-4ce1-8ef7-7f36ef879715")
 	)
-	(label "USB_DM"
+	(label "GPIO9"
 		(at 130.81 165.1 0)
 		(effects
 			(font
@@ -5984,7 +5984,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical"
 			(at 34.29 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -5995,7 +5995,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/50ec9710cee52ae98bff43fbb8887c5b.pdf?productCode=C492422"
 			(at 34.29 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -6017,7 +6017,7 @@
 				)
 			)
 		)
-		(property "MPN" "PM2.54-2x5P-ZC"
+		(property "MPN" "PZ254V-12-10P"
 			(at 34.29 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -6028,7 +6028,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C32713306"
+		(property "LCSC" "C492422"
 			(at 34.29 39.37 0)
 			(hide yes)
 			(show_name no)
