@@ -6658,7 +6658,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "21k"
+		(property "Value" "22k"
 			(at 139.192 65.786 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6702,7 +6702,7 @@
 				)
 			)
 		)
-		(property "MPN" "GR0603F21KT5G00"
+		(property "MPN" "FRC0603F2202TS"
 			(at 137.16 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -6713,7 +6713,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C49653293"
+		(property "LCSC" "C2907015"
 			(at 137.16 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -9751,7 +9751,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 236.22 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -9784,7 +9784,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0603KRX7R9BB104"
+		(property "MPN" "CL05B104KB5NNNC"
 			(at 236.22 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -9795,7 +9795,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C307331"
 			(at 236.22 67.31 0)
 			(hide yes)
 			(show_name no)
