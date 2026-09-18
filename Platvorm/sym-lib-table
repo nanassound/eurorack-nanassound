@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "platvorm")(type "KiCad")(uri "${KIPRJMOD}/platvorm.kicad_sym")(options "")(descr "Platvorm custom symbols"))
-)
