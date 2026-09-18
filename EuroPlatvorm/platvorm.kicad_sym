@@ -2856,4 +2856,437 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "EuroPlatvorm"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Value" "EuroPlatvorm"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Footprint" "platvorm_custom:EuroPlatvorm_Daughter"
+			(at 0 0 0)
+		(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+		(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Description" "EuroPlatvorm carrier stack reference (ESP32-C6 eurorack platform). Place on I/O daughter boards. Right bank = platform J3: +3V3/+12V/-12V, GPIO0-7, USB_DP/USB_DM (native USB), GND. Left bank = platform J4: GPIO23..GPIO8, GND. GPIO8/GPIO9 are boot strapping pins. Mates with 2x 1x14 2.54mm sockets, 12.68mm row spacing, platform back-to-back behind the daughter board."
+			(at 0 0 0)
+		(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "ki_keywords" "eurorack platvorm europlatvorm carrier daughter shield esp32-c6"
+			(at 0 0 0)
+		(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "ki_fp_filters" "platvorm_custom:EuroPlatvorm*"
+			(at 0 0 0)
+		(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(symbol "EuroPlatvorm_0_1"
+			(rectangle
+				(start -7.62 -2.54)
+				(end 7.62 38.1)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "J4"
+				(at -3.81 35.56 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+			(text "J3"
+				(at 3.81 35.56 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+		)
+		(symbol "EuroPlatvorm_1_1"
+		(pin power_out line
+			(at 10.16 33.02 0)
+			(length 2.54)
+			(name "+3V3"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "1"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin power_out line
+			(at 10.16 30.48 0)
+			(length 2.54)
+			(name "+12V"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "2"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin power_out line
+			(at 10.16 27.94 0)
+			(length 2.54)
+			(name "-12V"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "3"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at 10.16 25.4 0)
+			(length 2.54)
+			(name "GPIO0"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "4"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at 10.16 22.86 0)
+			(length 2.54)
+			(name "GPIO1"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "5"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at 10.16 20.32 0)
+			(length 2.54)
+			(name "GPIO2"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "6"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at 10.16 17.78 0)
+			(length 2.54)
+			(name "GPIO3"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "7"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at 10.16 15.24 0)
+			(length 2.54)
+			(name "GPIO4"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "8"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at 10.16 12.7 0)
+			(length 2.54)
+			(name "GPIO5"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "9"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at 10.16 10.16 0)
+			(length 2.54)
+			(name "GPIO6"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "10"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at 10.16 7.62 0)
+			(length 2.54)
+			(name "GPIO7"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "11"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at 10.16 5.08 0)
+			(length 2.54)
+			(name "USB_DP"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "12"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at 10.16 2.54 0)
+			(length 2.54)
+			(name "USB_DM"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "13"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin power_out line
+			(at 10.16 0 0)
+			(length 2.54)
+			(name "GND"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "14"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 33.02 180)
+			(length 2.54)
+			(name "GPIO23"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "15"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 30.48 180)
+			(length 2.54)
+			(name "GPIO22"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "16"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 27.94 180)
+			(length 2.54)
+			(name "GPIO21"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "17"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 25.4 180)
+			(length 2.54)
+			(name "GPIO20"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "18"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 22.86 180)
+			(length 2.54)
+			(name "GPIO19"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "19"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 20.32 180)
+			(length 2.54)
+			(name "GPIO18"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "20"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 17.78 180)
+			(length 2.54)
+			(name "GPIO17"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "21"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 15.24 180)
+			(length 2.54)
+			(name "GPIO16"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "22"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 12.7 180)
+			(length 2.54)
+			(name "GPIO15"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "23"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 10.16 180)
+			(length 2.54)
+			(name "GPIO11"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "24"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 7.62 180)
+			(length 2.54)
+			(name "GPIO10"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "25"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 5.08 180)
+			(length 2.54)
+			(name "GPIO9"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "26"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin bidirectional line
+			(at -10.16 2.54 180)
+			(length 2.54)
+			(name "GPIO8"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "27"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		(pin power_out line
+			(at -10.16 0 180)
+			(length 2.54)
+			(name "GND"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+			(number "28"
+				(effects
+					(font (size 1.27 1.27)))
+				)
+		)
+		)
+		(embedded_fonts no)
+	)
 )
