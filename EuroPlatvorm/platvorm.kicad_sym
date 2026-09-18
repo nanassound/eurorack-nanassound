@@ -1289,19 +1289,19 @@
 			(pin passive line
 				(at 12.7 -5.08 180)
 				(length 2.54)
-				(name "NC" (effects (font (size 1.27 1.27))))
+				(name "I/O2" (effects (font (size 1.27 1.27))))
 				(number "4" (effects (font (size 1.27 1.27))))
 			)
-			(pin passive line
+			(pin power_in line
 				(at 12.7 0 180)
 				(length 2.54)
-				(name "NC" (effects (font (size 1.27 1.27))))
+				(name "VBUS" (effects (font (size 1.27 1.27))))
 				(number "5" (effects (font (size 1.27 1.27))))
 			)
 			(pin passive line
 				(at 12.7 5.08 180)
 				(length 2.54)
-				(name "VBUS" (effects (font (size 1.27 1.27))))
+				(name "I/O1" (effects (font (size 1.27 1.27))))
 				(number "6" (effects (font (size 1.27 1.27))))
 			)
 (rectangle (start -10.16 -7.62) (end 10.16 7.62) (stroke (width 0.254) (type default)) (fill (type background)))

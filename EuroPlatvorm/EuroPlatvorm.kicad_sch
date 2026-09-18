@@ -3414,7 +3414,7 @@
 				(pin passive line
 					(at 12.7 -5.08 180)
 					(length 2.54)
-					(name "NC"
+					(name "I/O2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3429,10 +3429,10 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_in line
 					(at 12.7 0 180)
 					(length 2.54)
-					(name "NC"
+					(name "VBUS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3450,7 +3450,7 @@
 				(pin passive line
 					(at 12.7 5.08 180)
 					(length 2.54)
-					(name "VBUS"
+					(name "I/O1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4324,14 +4324,6 @@
 	(no_connect
 		(at 66.04 113.03)
 		(uuid "1f27fd2c-eb05-4874-86af-14ee92362d84")
-	)
-	(no_connect
-		(at 62.23 161.29)
-		(uuid "92a1c047-3cfd-4cb8-bd2a-dffd5fa2ee63")
-	)
-	(no_connect
-		(at 62.23 156.21)
-		(uuid "d094c66b-e8be-4868-81ec-0946965852fd")
 	)
 	(no_connect
 		(at 66.04 118.11)
@@ -5491,8 +5483,8 @@
 		)
 		(uuid "234f98f8-b23c-46e3-a312-878e79a834d1")
 	)
-	(label "VBUS"
-		(at 67.31 151.13 0)
+	(label "USB_DM"
+		(at 67.31 161.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5500,6 +5492,48 @@
 			(justify left bottom)
 		)
 		(uuid "256942e8-ab52-4748-b935-dc6883ef54ce")
+	)
+	(label "USB_DP"
+		(at 67.31 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6069762e-a29c-4b31-8903-55cd7018f936")
+	)
+	(label "VBUS"
+		(at 67.31 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "275f2595-71a0-411e-a646-84cb372f5939")
+	)
+	(wire
+		(pts
+			(xy 62.23 156.21)
+			(xy 67.31 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cafe3fc6-544a-4d9e-93b0-a46738415714")
+	)
+	(wire
+		(pts
+			(xy 62.23 161.29)
+			(xy 67.31 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bb4f884-86e3-4829-8144-23a5ffaad044")
 	)
 	(label "GPIO16"
 		(at 130.81 154.94 0)
@@ -6864,7 +6898,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 10V"
+		(property "Value" "22uF 6.3V"
 			(at 162.052 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7883,7 +7917,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 10V"
+		(property "Value" "22uF 6.3V"
 			(at 150.114 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11725,7 +11759,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 10V"
+		(property "Value" "22uF 6.3V"
 			(at 137.922 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12125,7 +12159,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 10V"
+		(property "Value" "22uF 6.3V"
 			(at 233.172 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
