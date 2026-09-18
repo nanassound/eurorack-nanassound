@@ -1,0 +1,283 @@
+{
+  "schematic": "EuroPlatvorm.kicad_sch",
+  "last_sync": "2026-09-18T08:22:53.587451+00:00",
+  "parts": {
+    "CC0603KRX7R9BB104": {
+      "manufacturer": "",
+      "description": "BOOT cap",
+      "value": "100nF",
+      "references": [
+        "C3",
+        "C2"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:47.092787+00:00"
+    },
+    "CL31A106KAHNNNE": {
+      "manufacturer": "",
+      "description": "buck input",
+      "value": "10uF 25V",
+      "references": [
+        "C1"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:47.092445+00:00"
+    },
+    "CL05B104KB5NNNC": {
+      "manufacturer": "",
+      "description": "module decoupling",
+      "value": "100nF",
+      "references": [
+        "C11"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:47.092804+00:00"
+    },
+    "CL10A106KP8NNNC": {
+      "manufacturer": "",
+      "description": "LDO input",
+      "value": "10uF 10V",
+      "references": [
+        "C7"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:47.813840+00:00"
+    },
+    "CL10C560JB8NNNC": {
+      "manufacturer": "",
+      "description": "FF cap",
+      "value": "56pF",
+      "references": [
+        "C6"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:47.813206+00:00"
+    },
+    "CL21A226MQQNNNE": {
+      "manufacturer": "",
+      "description": "buck output",
+      "value": "22uF 10V",
+      "references": [
+        "C5",
+        "C4",
+        "C8",
+        "C10"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:47.806847+00:00"
+    },
+    "XL-1608UGC-04": {
+      "manufacturer": "",
+      "description": "power LED",
+      "value": "LED_Green",
+      "references": [
+        "D2"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:48.500887+00:00"
+    },
+    "CL10A105KO8NNNC": {
+      "manufacturer": "",
+      "description": "EN delay",
+      "value": "1uF",
+      "references": [
+        "C9"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:48.470165+00:00"
+    },
+    "SS34": {
+      "manufacturer": "",
+      "description": "reverse protection",
+      "value": "SS34",
+      "references": [
+        "D1"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:48.489373+00:00"
+    },
+    "TYPE-C-31-M-12": {
+      "manufacturer": "",
+      "description": "USB-C programming power",
+      "value": "USB_C_Receptacle_USB2.0",
+      "references": [
+        "J2"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:49.163854+00:00"
+    },
+    "PZ254V-12-10P": {
+      "file": "PZ254V-12-10P_Doepfer_power_header.pdf",
+      "manufacturer": "",
+      "description": "Doepfer power header",
+      "value": "Eurorack_Power_2x5",
+      "datasheet_url": "https://datasheet.lcsc.com/datasheet/pdf/50ec9710cee52ae98bff43fbb8887c5b.pdf?productCode=C492422",
+      "downloaded_date": "2026-09-18T08:22:49.149543+00:00",
+      "source": "schematic",
+      "status": "ok",
+      "references": [
+        "J1"
+      ],
+      "size_bytes": 142195,
+      "verification": "unverified"
+    },
+    "1206L050/30NR": {
+      "manufacturer": "",
+      "description": "eurorack fuse",
+      "value": "500mA PTC",
+      "references": [
+        "F1",
+        "F2"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:49.144975+00:00"
+    },
+    "2.54-1x40P": {
+      "manufacturer": "",
+      "description": "carrier header left",
+      "value": "Conn_01x14",
+      "references": [
+        "J3",
+        "J4"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:49.810108+00:00"
+    },
+    "YNR6045-100M": {
+      "manufacturer": "",
+      "description": "buck inductor",
+      "value": "10uH",
+      "references": [
+        "L1"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:49.829981+00:00"
+    },
+    "0603WAF1003T5E": {
+      "manufacturer": "",
+      "description": "FB divider top",
+      "value": "100k",
+      "references": [
+        "R1"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:50.135569+00:00"
+    },
+    "0603WAF5101T5E": {
+      "manufacturer": "",
+      "description": "CC1 Rd",
+      "value": "5.1k",
+      "references": [
+        "R3",
+        "R4"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:50.493789+00:00"
+    },
+    "FRC0603F1002TS": {
+      "manufacturer": "",
+      "description": "IO9 pull-up",
+      "value": "10k",
+      "references": [
+        "R6",
+        "R5",
+        "R7"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:50.802074+00:00"
+    },
+    "FRC0603F2202TS": {
+      "manufacturer": "",
+      "description": "FB divider bottom",
+      "value": "22k",
+      "references": [
+        "R2"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:50.449375+00:00"
+    },
+    "0603WAF1001T5E": {
+      "manufacturer": "",
+      "description": "PWR LED series",
+      "value": "1k",
+      "references": [
+        "R8"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:51.183034+00:00"
+    },
+    "TS-1187A-B-A-B": {
+      "manufacturer": "",
+      "description": "reset",
+      "value": "RST",
+      "references": [
+        "SW1"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:51.481162+00:00"
+    },
+    "TPS54202DDCR": {
+      "manufacturer": "",
+      "description": "sync buck 4.5-28V 2A",
+      "value": "TPS54202DDCR",
+      "references": [
+        "U1"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:51.861491+00:00"
+    },
+    "AMS1117-3.3": {
+      "manufacturer": "",
+      "description": "LDO 3.3V 1A",
+      "value": "AMS1117-3.3",
+      "references": [
+        "U2"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:52.149685+00:00"
+    },
+    "USBLC6-2SC6": {
+      "manufacturer": "",
+      "description": "USB ESD",
+      "value": "USBLC6-2SC6",
+      "references": [
+        "U3"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:52.151492+00:00"
+    },
+    "ESP32-C6-WROOM-1-N4": {
+      "manufacturer": "",
+      "description": "WiFi6/BLE/802.15.4 module",
+      "value": "ESP32-C6-WROOM-1-N4",
+      "references": [
+        "U4"
+      ],
+      "status": "failed",
+      "error": "No datasheet URL or all download methods failed",
+      "last_attempt": "2026-09-18T08:22:52.568997+00:00"
+    }
+  }
+}

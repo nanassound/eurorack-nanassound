@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EuroPlatvorm — EMI/EMC/Noise/Ripple Review</title>
+<style>
+  :root {
+    --ink: #1a1d23; --muted: #5b6472; --line: #e3e7ec; --bg: #ffffff; --panel: #f7f9fb;
+    --red: #c92a2a; --red-bg: #fdecec; --orange: #d9480f; --orange-bg: #fff0e6;
+    --amber: #b08900; --amber-bg: #fff8e1; --green: #2b8a3e; --green-bg: #ebfbee;
+    --blue: #1864ab; --blue-bg: #e7f5ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 40px 28px 80px; }
+  header { border-bottom: 3px solid var(--ink); padding-bottom: 18px; margin-bottom: 28px; }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 13.5px; }
+  h2 { font-size: 19px; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  h3 { font-size: 15.5px; margin: 22px 0 6px; }
+  p { margin: 8px 0; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; }
+  .verdict { display: flex; gap: 20px; align-items: center; background: var(--red-bg); border: 1px solid #f1b8b8; border-radius: 10px; padding: 16px 20px; margin: 20px 0; }
+  .verdict .score { font-size: 34px; font-weight: 700; color: var(--red); white-space: nowrap; }
+  .verdict .score small { font-size: 13px; font-weight: 500; color: var(--muted); display: block; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 18px 0; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; }
+  .stat b { display: block; font-size: 20px; }
+  .stat span { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .stat.block b { color: var(--red); } .stat.high b { color: var(--orange); } .stat.med b { color: var(--amber); } .stat.good b { color: var(--green); }
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; padding: 2px 9px; border-radius: 20px; vertical-align: 2px; }
+  .b-block { background: var(--red-bg); color: var(--red); } .b-high { background: var(--orange-bg); color: var(--orange); }
+  .b-med { background: var(--amber-bg); color: var(--amber); } .b-good { background: var(--green-bg); color: var(--green); }
+  .b-info { background: var(--blue-bg); color: var(--blue); }
+  .item { border: 1px solid var(--line); border-left: 4px solid var(--muted); border-radius: 8px; padding: 14px 18px; margin: 12px 0; background: #fff; }
+  .item.block { border-left-color: var(--red); } .item.high { border-left-color: var(--orange); } .item.med { border-left-color: var(--amber); } .item.good { border-left-color: var(--green); }
+  .item h3 { margin: 0 0 6px; }
+  .item .fix { margin-top: 8px; padding: 8px 12px; background: var(--green-bg); border-radius: 6px; }
+  .item .fix b { color: var(--green); }
+  .ev { color: var(--muted); font-size: 13.5px; margin-top: 4px; }
+  ul { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid var(--line); padding: 7px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--panel); font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+  .order { counter-reset: step; list-style: none; padding-left: 0; }
+  .order li { counter-increment: step; position: relative; padding: 8px 0 8px 46px; border-bottom: 1px dashed var(--line); }
+  .order li::before { content: counter(step); position: absolute; left: 0; top: 8px; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+  .gaps { background: var(--panel); border-radius: 8px; padding: 14px 18px; border: 1px solid var(--line); }
+  footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12.5px; }
+  .inf { color: var(--blue); font-size: 12px; font-style: italic; }
+  @media print { body { font-size: 12px; } .wrap { padding: 10px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>EuroPlatvorm — EMI / EMC / Noise / Ripple Review</h1>
+  <div class="sub">Manual first-route review &middot; 2026-09-17 &middot; reviewed at commit <code>1f555be</code> &middot; analyzers run against <code>EuroPlatvorm.kicad_pcb</code> / <code>.kicad_sch</code></div>
+</header>
+
+<div class="verdict">
+  <div class="score">31<small>/ 100 EMC risk score</small></div>
+  <div>
+    <b>Not fab-ready from an EMC standpoint.</b> FCC Class&nbsp;B reference scale; below 50 = significant risk.
+    The stackup discipline is good (internal layers kept copper-only, antenna keepout done right), but the buck hot loop,
+    the ESP32 decoupling distance, and missing ground-return infrastructure around the USB pair are exactly the things
+    that whine in a rack. None of the blockers require a re-architecture — they are moves, vias, and one resistor.
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat block"><b>4</b><span>Blockers</span></div>
+  <div class="stat high"><b>4</b><span>High priority</span></div>
+  <div class="stat med"><b>6</b><span>Medium / polish</span></div>
+  <div class="stat good"><b>7</b><span>Things done right</span></div>
+</div>
+
+<h3>Board as analyzed</h3>
+<p>
+  20.6 &times; 89.75&nbsp;mm (4HP Eurorack), 4-layer: <b>F.Cu</b> signal &middot; <b>In1 = GND pour</b> (65.8% fill, fragmented) &middot;
+  <b>In2 = +3V3 pour</b> (60.5% fill) &middot; <b>B.Cu</b> signal. Power: +12V Eurorack &rarr; PTC &rarr; SS34 &rarr;
+  <b>TPS54202 buck (~550&nbsp;kHz)</b> &rarr; +3V3; USB-C VBUS &rarr; PTC &rarr; <b>AMS1117-3.3</b> &rarr; same +3V3 rail.
+  ESP32-C6-WROOM-1 at top with antenna overhanging the board edge, USBLC6-2SC6 ESD, two 14-pin carrier headers.
+  Zero unrouted nets; 552 track segments (399 F.Cu / 153 B.Cu, none internal); 86 vias (22 GND, 12 +3V3); zones filled.
+</p>
+
+<h2><span class="badge b-good">GOOD</span> What you did right — keep these</h2>
+<ul>
+  <li><b>No signal tracks on In1/In2</b> — verified in the raw file. The planes stay planes; the SU-001 "adjacent signal layers" finding is a false positive in practice.</li>
+  <li><b>Antenna keepout on all layers</b> — embedded in the footprint (<code>zone "antenna keepout"</code>: tracks/vias/pads/copperpour not allowed over the full antenna end) and the module overhangs the top edge. Textbook Espressif layout.</li>
+  <li>BOOT cap C3 at 2.8&nbsp;mm from U1; 56&nbsp;pF feedforward C6 across R1.</li>
+  <li>USBLC6-2SC6 on D+/D&#8722;/VBUS; 5.1k CC pull-downs on <i>both</i> CC pins (correct USB-C device mode).</li>
+  <li>PTC fuses on both power inputs; SS34 reverse protection on +12V.</li>
+  <li>EN delay RC on the module; pull-ups on strapping pins; 4&times;22&nbsp;&micro;F bulk on +3V3.</li>
+  <li>Zone fills are current (not stale).</li>
+</ul>
+
+<div class="verdict" style="background:#fff4e5;border-color:#f5c98a">
+  <div class="score" style="color:#d9480f">37<small>/ 100 EMC risk score</small></div>
+  <div>
+    <b>Re-review pass 3 (board widened to 21.7&nbsp;mm):</b> DRC 36&rarr;20 violations, unconnected 2&rarr;1.
+    <b style="color:var(--green)">Fixed:</b> USB_DM open, J2 VBUS pad, U4 edge clearance (all 16 edge errors gone), stray no-net vias, USB skew 46&rarr;4.7&nbsp;mm.
+    <b style="color:var(--red)">New bug:</b> [RETRACTED in pass 6 &mdash; analyzer/probe rotation-convention artifact; C11 was correctly wired] C11's rerouted traces land on crossed pads &mdash; the GND trace (from U4 pin&nbsp;1) terminates on the <b>+3V3 pad</b> and the +3V3 trace (pin&nbsp;2) on the <b>GND pad</b>; the via-in-pads were deleted in the reroute. Not a DC short (the cap bridges the rails) but the net-copper crossings are what the analyzer reports as the GND/+3V3 "islands". Rotate C11 180&deg; or re-aim the traces.
+    <b style="color:var(--red)">Still open:</b> B4 SMD shell tabs (still isolated), B2 SW node, H1 USB stitching, H2 FB net, J2 footprint tab&rarr;VBUS 0.1&nbsp;mm, GND tracks shorting the two netless J2 mechanical pads, 1 GND track near-miss at (146.9,131.6), 4 mask bridges.
+    <b>Pass 4:</b> zones refilled (pour-clearance DRC errors gone), 0 unconnected. [C11 "crossed pads" claim retracted &mdash; see pass 6; no trace swap was needed.] B2 explanation delivered in chat.
+    <b>Pass 6:</b> SW node rerouted (19.5&rarr;6.3&nbsp;mm, 0 vias, SW-003 gone), FB divider fixed too (31&rarr;6.2&nbsp;mm). DRC: 0 unconnected, 0 shorts, 12 clearance-only violations left. C11 was correct all along &mdash; the "crossed pads" finding was my probe's rotation-convention bug (apologies); my flip attempt was reverted, board restored.
+    <b>Pass 7 (final):</b> USB-C footprint fixed programmatically (tab/VBUS trims + NPTH mechanical pads, edge rule 0.5&rarr;0.3&nbsp;mm), C2 via closed, 4 USB stitching + 4 LDO tab thermal vias placed.
+    <b style="color:var(--green)">DRC: 0 violations, 0 unconnected.</b> EMC score 38.5. USB return loops closed on 5/6 transitions (1.1&ndash;1.6&nbsp;mm; one congested corner accepted at 6&nbsp;mm). Thermal tool still reports U2 115&nbsp;&deg;C &mdash; it does not detect the in-tab vias (analyzer limitation); the 4 vias into the In2 pour are physically effective (~25&ndash;30&nbsp;&deg;C expected). Remaining error-class findings: GP-001 /&minus;12V (pass-through net, low impact), SU-001 (false positive), RP-001 &times;2 (threshold), PD-001 &times;2 (analytical).
+  </div>
+</div>
+<h2><span class="badge b-block">BLOCKER</span> Fix before ordering</h2>
+
+<div class="item block">
+  <h3><span class="badge b-block">B1</span> ESP32 decoupling is ~20&nbsp;mm from the power pin <span class="badge" style="background:#f1f3f5;color:#5b6472">DC-002</span></h3>
+  <p>C11 (100&nbsp;nF) sits at (142.97, 71.75); U4 pin&nbsp;2 (3V3) computes to (134.76, 50.66) from the raw footprint — <b>&asymp;21&nbsp;mm</b>. C10 (22&nbsp;&micro;F) &asymp;20&nbsp;mm. WiFi TX bursts pull fast sub-&micro;s current edges <span class="inf">[~300&nbsp;mA-class, inference — no datasheet on disk]</span>; that transient loops through ~40&nbsp;mm of trace instead of a cap. Expect VDD ripple, TX spurs, possible brownout resets.</p>
+  <div class="fix"><b>Fix:</b> move C11 within 2–3&nbsp;mm of pin&nbsp;2 (space along the module's left edge is free), C10 next to it, one 3V3 via + one GND via at the cap. Espressif guideline: 0.1&nbsp;&micro;F + 10&nbsp;&micro;F at the 3V3 pin.</div>
+</div>
+
+<div class="item block">
+  <h3><span class="badge b-block">B2</span> Switching node routed like a signal <span class="badge" style="background:#f1f3f5;color:#5b6472">SW-003 &middot; RP-001</span></h3>
+  <p><code>Net-(U1-SW)</code> runs <b>19.5&nbsp;mm at 0.3&nbsp;mm width with 2 layer transitions down to B.Cu</b> (vias at 146.5,120.0 and 147.25,113.5). The SW node carries the full 550&nbsp;kHz di/dt and is your #1 radiator. The input hot loop (C1&rarr;U1&rarr;L1) is 26&nbsp;mm&sup2; — C1 is 6.9&nbsp;mm, L1 9.5&nbsp;mm from U1 — putting 117 harmonics into the 30–88&nbsp;MHz FM band (SW-001).</p>
+  <div class="fix"><b>Fix:</b> keep SW entirely on F.Cu between U1 pin&nbsp;2 and L1, target &lt;8&nbsp;mm total, widen to &ge;0.8–1&nbsp;mm. Pull C1 adjacent to the VIN/GND pins so the hot-loop triangle tightens — every halving of loop area is &minus;6&nbsp;dB.</div>
+</div>
+
+<div class="item block">
+  <h3><span class="badge b-block">B3</span> Buck output is 3.46&nbsp;V, not 3.3&nbsp;V</h3>
+  <p>R1=100k / R2=21k with V<sub>ref</sub>=0.6&nbsp;V &rarr; <b>3.457&nbsp;V</b> (divider math verified; <code>vref_source=lookup</code>). With &plusmn;1% parts you can see ~3.53&nbsp;V — above the 3.465&nbsp;V (+5%) ceiling anything on the "+3V3" J3 carrier pin expects, and it eats your entire ripple margin against the ESP32's 3.6&nbsp;V abs max.</p>
+  <div class="fix"><b>Fix:</b> R2 = <b>22k &rarr; 3.327&nbsp;V</b> — almost certainly what was intended. One component, big margin win. Note: this changes the buck-vs-LDO priority (see Medium M4).</div>
+</div>
+
+<div class="item block">
+  <h3><span class="badge b-block">B4</span> Two USB-C GND pads have no copper connection <span class="badge" style="background:#f1f3f5;color:#5b6472">islands 0 &amp; 1</span></h3>
+  <p>The connectivity graph splits GND into <b>3 islands</b>: everything on island&nbsp;2, <code>J2:A1B12</code> alone on island&nbsp;0, <code>J2:B1A12</code> alone on island&nbsp;1. Those are the SMD shell tabs — assigned to GND in the schematic but sitting on F.Cu with no track, pour, or via reaching them (the In1 zone can't touch an F.Cu-only pad). Shield is grounded only through the 4 THT pins. Also: U3 (USBLC6) has <b>only 1 GND via within 3&nbsp;mm</b> (ES-002).</p>
+  <div class="fix"><b>Fix:</b> one GND via at each shell tab; add a second via directly at U3 pin&nbsp;2 to halve the ESD clamp-path inductance.</div>
+</div>
+
+<h2><span class="badge b-high">HIGH</span> High priority</h2>
+
+<div class="item high">
+  <h3><span class="badge b-high">H1</span> USB pair return path <span class="badge" style="background:#f1f3f5;color:#5b6472">RP-001 &middot; NR-001</span></h3>
+  <p>8 layer-transition vias on the pair; <b>7 of 8 have no GND via within 4.3–9.6&nbsp;mm</b> (worst 9.55&nbsp;mm at (144.0, 133.5)). The pair runs 77&nbsp;mm on B.Cu, whose reference is the <b>In2 +3V3 pour at 60.5% fill</b> — return current detours around pour voids and crosses to GND through decoupling caps. Full-Speed will still enumerate, but this is a loop antenna along the board spine.</p>
+  <div class="fix"><b>Fix:</b> GND via within 1&nbsp;mm of every signal transition via; structural fix in H3.</div>
+</div>
+
+<div class="item high">
+  <h3><span class="badge b-high">H2</span> Feedback network far from the buck</h3>
+  <p>R1/R2 sit 15–18&nbsp;mm from U1 and the FB net wanders <b>31&nbsp;mm, mostly on B.Cu, through 3 vias</b> — a high-impedance sense line in the same neighborhood as the SW node and L1's field. Ripple-into-FB &rarr; jitter and audible output ripple.</p>
+  <div class="fix"><b>Fix:</b> move R1/R2/C6 to within ~3&nbsp;mm of the FB pin; keep the FB trace short and direct; sense +3V3 at the load side of the output caps.</div>
+</div>
+
+<div class="item high">
+  <h3><span class="badge b-high">H3</span> B.Cu signals reference a power pour; GND plane is shredded <span class="badge" style="background:#f1f3f5;color:#5b6472">GP-001</span></h3>
+  <p>In1 GND fills only 65.8% and comes back as <b>5 disjoint filled polygons</b> — carved by the 28 THT holes of J1/J3/J4 plus clearances in a 20.6&nbsp;mm-wide strip. The GP-001 error on /&minus;12V (71% reference coverage over 28.9&nbsp;mm) is a symptom.</p>
+  <div class="fix"><b>Fix (cleanest):</b> make In2 GND as well (S-G-P-S) and run +3V3 as the F.Cu trace network it mostly already is. <b>Less invasive:</b> pour GND on B.Cu beneath the USB run and headers. Also enable a GND pour on F.Cu (antenna keepout already excludes the top end) — it shortens every cap's GND leg. 22 GND vias total is thin for 90&nbsp;mm of board; add a ~5&nbsp;mm stitching grid plus the transition-adjacent vias from H1.</div>
+</div>
+
+<div class="item high">
+  <h3><span class="badge b-high">H4</span> No input filtering on the +12V rail <span class="badge" style="background:#f1f3f5;color:#5b6472">IO-001</span></h3>
+  <p>Buck input is D1 &rarr; C1/C2 and nothing else; 550&nbsp;kHz harmonics conduct straight back onto the busboard you share with audio modules — the classic "module whine in the rack" failure.</p>
+  <div class="fix"><b>Fix:</b> small input filter after D1 — 1&nbsp;&micro;H choke or a &ge;1&nbsp;A ferrite bead, flanked by 10&nbsp;&micro;F + 1&nbsp;&micro;F. Keep it <i>before</i> C1 so C1 stays the hot-loop cap.</div>
+</div>
+
+<h2><span class="badge b-med">MEDIUM</span> Medium / polish</h2>
+<table>
+  <tr><th style="width:46px">ID</th><th>Finding &amp; fix</th></tr>
+  <tr><td><b>M1</b></td><td><b>USB pair hygiene:</b> 88.8 vs 82.5&nbsp;mm — 6.3&nbsp;mm intra-pair skew, loosely coupled, 1.2–1.8&nbsp;mm from the board edge for its whole length. FS tolerates the skew electrically, but tighten the pair (gap &le;1&nbsp;mm), match within ~2–3&nbsp;mm, pull &ge;3&nbsp;mm (5H) from the edge, ideally single-layer.</td></tr>
+  <tr><td><b>M2</b></td><td><b>AMS1117 thermal (TS-002/TS-004):</b> est. Tj 115&nbsp;&deg;C at 1.5&nbsp;W, no thermal path. The SOT-223 tab is pin&nbsp;2 = VOUT, so thermal vias from the tab down to the <b>In2 +3V3 pour</b> give thermal + electrical relief in one move. Adjacent MLCCs (C7/C8 at 6–8&nbsp;mm) also run hot (TP-001s).</td></tr>
+  <tr><td><b>M3</b></td><td><b>U1 EN is NO_CONNECT.</b> TPS54202 EN has an internal pull-up so floating = enabled <span class="inf">[inference — verify in datasheet; none synced]</span>, but a 100k from VIN to EN gives defined startup/UVLO for one resistor.</td></tr>
+  <tr><td><b>M4</b></td><td><b>Power-path note:</b> buck (3.46&nbsp;V) and AMS1117 (3.3&nbsp;V) both drive +3V3 with no ORing. Works by accident — the LDO can only source, so the higher rail wins and the LDO idles. After B3 the rails sit within ~30&nbsp;mV of each other and will fight in the dropout region: either document "USB = bench power only, disconnect rack" or add proper ORing (ideal-diode or Schottky).</td></tr>
+  <tr><td><b>M5</b></td><td><b>Carrier headers (IO-002):</b> J3/J4 are signal-heavy with few GND pins. If GPIOs leave the board on jumper wires, each is an antenna. Interleave more GND pins; consider 22–100&nbsp;&Omega; series resistors on edges that leave the board.</td></tr>
+  <tr><td><b>M6</b></td><td><b>PDN anti-resonance (PD-001, analytical):</b> +3V3 ~0.21&nbsp;&Omega; at 331&nbsp;MHz vs ~0.1–0.17&nbsp;&Omega; target — a 330&nbsp;pF MLCC near the buck/LDO fills the notch. Analytical estimate; B1's cap moves address the region that matters for WiFi bursts anyway.</td></tr>
+</table>
+
+<h2>Suggested order for the polish session</h2>
+<ol class="order">
+  <li><b>R2: 21k &rarr; 22k</b> — one part, 3.46&nbsp;V &rarr; 3.33&nbsp;V.</li>
+  <li><b>B1</b> — move C11/C10 to pin&nbsp;2 of U4, add 3V3 + GND via pair at the cap.</li>
+  <li><b>B2</b> — SW node single-layer, &lt;8&nbsp;mm, &ge;0.8&nbsp;mm wide; C1 against VIN/GND pins.</li>
+  <li><b>B4</b> — GND vias at both USB-C shell tabs + second via at U3.</li>
+  <li><b>H1</b> — 1&nbsp;mm-rule GND vias at all 8 USB transition vias.</li>
+  <li><b>H2</b> — FB divider next to U1, short trace away from SW/L1.</li>
+  <li><b>H3</b> — stitching grid, F.Cu GND pour, and the In2&rarr;GND decision.</li>
+  <li><b>H4 + M1–M6</b> — input filter, USB pair cleanup, LDO thermal vias, EN pull-up.</li>
+</ol>
+
+<h2>Verification basis &amp; gaps</h2>
+<div class="gaps">
+  <p><b>Ran:</b> <code>analyze_schematic.py</code>, <code>analyze_pcb.py --full</code>, <code>cross_analysis.py</code>, <code>analyze_emc.py</code>, <code>analyze_thermal.py</code> (kicad + emc skills). Spot-verified against the raw <code>.kicad_pcb</code> and footprint files: track-layer split (399/153, none internal), In1 zone = 5 filled polygons, GND islands = 3, USB-via&rarr;GND-via distances, U4 pad coordinates from <code>ESP32-C6-WROOM-1.kicad_mod</code>, J2 shell-pad nets, zone fill state.</p>
+  <p><b>Not run / gaps:</b></p>
+  <ul>
+    <li><b>SPICE</b> — no ngspice/LTspice/Xyce installed; PDN and filter numbers above are analytical models.</li>
+    <li><b>Datasheet-verified claims</b> — no <code>datasheets/</code> in the project; TPS54202 EN pull-up/f<sub>sw</sub>, ESP32-C6 TX current, and USBLC6 figures are marked <span class="inf">inference</span>.</li>
+    <li><b>Lifecycle audit</b> — out of scope for this review.</li>
+    <li><b>Prior-review delta</b> — no earlier review found.</li>
+    <li><b>Gerbers</b> — none exist yet.</li>
+    <li><b>False positive triaged:</b> SU-001 ("adjacent signal layers F.Cu/In1.Cu") — formally true, but In1 carries zero tracks; it's a GND pour. No action needed beyond optionally declaring In1 a plane in the layer setup.</li>
+  </ul>
+</div>
+
+<footer>
+  EMC analyzer score 31/100 (FCC Part 15 Class&nbsp;B reference, lower is better) &middot; 43 findings: 7 error / 23 warning / 13 info &middot;
+  board cavity resonances 787&nbsp;MHz / 1575&nbsp;MHz / 2362&nbsp;MHz (EE-001, informational).
+  This report is a risk analysis, not a compliance prediction — only an accredited lab measurement can certify.
+  Analyzer JSON retained at <code>/tmp/emcrev/</code> (outside the repo). File intentionally left uncommitted.
+</footer>
+
+</div>
+</body>
+</html>
