@@ -5219,7 +5219,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A106KP8NNNC"
+		(property "MPN" "CL21A106KPCLQNC"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5232,7 +5232,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C962097"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")

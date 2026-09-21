@@ -9521,7 +9521,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10A106KP8NNNC"
+		(property "MPN" "CL21A106KPCLQNC"
 			(at 96.52 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -9532,7 +9532,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C19702"
+		(property "LCSC" "C962097"
 			(at 96.52 104.14 0)
 			(hide yes)
 			(show_name no)
