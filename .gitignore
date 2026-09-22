@@ -29,6 +29,9 @@ DRC*.rpt
 # Regenerable analyzer output (kicad-happy)
 EuroPlatvorm/analysis/
 
+# Regenerable fab-order zip packaging (fab outputs tracked in EuroPlatvorm/fabrication/)
+EuroPlatvorm/*.zip
+
 # Reference material for agent review sessions (not board files)
 datasheets/
 esp32-c6-wroom-1_datasheet/
