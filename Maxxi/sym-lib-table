@@ -1,0 +1,10 @@
+(sym_lib_table
+	(version 7)
+	(lib
+		(name "Maxxi")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/Maxxi.kicad_sym")
+		(options "")
+		(descr "Maxxi custom symbols")
+	)
+)

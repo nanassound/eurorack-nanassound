@@ -1,0 +1,303 @@
+(footprint "VN02A1500000G"
+		(layer "F.Cu")
+		(uuid "33f7569d-bbee-4ec6-bbe3-6f6374131732")
+		(descr "VN02A1500000G-4")
+		(tags "Connector")
+		(property "Reference" "J6"
+			(at 2.5 -2.25 90)
+			(layer "B.SilkS")
+			(uuid "44706f3f-4902-447f-9e40-e5905cd68376")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "VN02A1500000G"
+			(at 1.24 -0.05 90)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "8f97211f-1a92-44c9-adb2-2174fa4fab68")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "http://www.anytek.com.tw/UserUpFiles/20120512/L_wOt9EJEyJN.pdf"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "016f5000-cfb9-4c2e-ba29-1dc25903607b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "2 Position Wire to Board Terminal Block Horizontal with Board 0.100\" (2.54mm) Through Hole"
+			(at 0 0 90)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "401bb93f-a00b-4605-969a-ebd959c919b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Height" "8.8"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5aa5f0d7-9ab1-4641-8a57-85ad3dda1369")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Part Number" "649-VN02A15000J0G"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8220d983-99d0-4d03-958c-505f6945686a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/VN02A1500000G?qs=Mv7BduZupUgf8d3Xo6xdxw%3D%3D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7032fb3a-e02b-48ed-96a7-d6ba723a5efb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e2cf8b7f-d987-4524-aaae-5d55160ab50b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer_Part_Number" "VN02A1500000G"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1112bbb1-a495-432d-8400-5bd7952945bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC Part Number" "C5188442"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c72318e8-6272-4edd-ae70-842c9be1afe7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/a24f00b5-a65d-40b6-923b-7a909a8ae11a")
+		(sheetname "/")
+		(sheetfile "V3.0.kicad_sch")
+		(attr through_hole dnp)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 3.98 -3.3)
+			(end 3.98 3.2)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "454cc28e-e7de-4b7e-9fd2-5cb1427248e1")
+		)
+		(fp_line
+			(start -1.5 -3.3)
+			(end 3.98 -3.3)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "cadd5699-4bc1-4e3a-904e-86d0955eee43")
+		)
+		(fp_circle
+			(center -1.95 0)
+			(end -2.0 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill none)
+			(layer "B.SilkS")
+			(uuid "b769a95e-5f70-4eee-a81f-1ad4b7b9f0ae")
+		)
+		(fp_line
+			(start 4.98 -4.3)
+			(end -2.5 -4.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "cd283b21-c036-4518-93f2-0421b5f7d530")
+		)
+		(fp_line
+			(start -2.5 -4.3)
+			(end -2.5 4.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "86ac6145-ef4c-4144-ab20-19c248a1158f")
+		)
+		(fp_line
+			(start 4.98 4.2)
+			(end 4.98 -4.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "f42c2951-1838-472b-bccd-83c56622f58c")
+		)
+		(fp_line
+			(start -2.5 4.2)
+			(end 4.98 4.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "464c8d83-5b86-42b9-9aba-b7d724aa8a7c")
+		)
+		(fp_line
+			(start 3.98 -3.3)
+			(end 3.98 3.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "e7920bd4-58c2-40ac-868e-d399b1443d73")
+		)
+		(fp_line
+			(start -1.5 -3.3)
+			(end 3.98 -3.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "46357e56-2d11-424d-945d-507c521f965e")
+		)
+		(fp_line
+			(start 3.98 3.2)
+			(end -1.5 3.2)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "9c2197ac-cc9c-47d4-8391-15685ab61245")
+		)
+		(fp_line
+			(start -1.5 3.2)
+			(end -1.5 -3.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "aa4f2756-6f9c-4072-b73e-98a58618877c")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 1.24 -0.05 90)
+			(layer "B.Fab")
+			(uuid "fe136b78-4b7f-4aa4-aabf-717eab966d42")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at 0 0 90)
+			(size 1.95 1.95)
+			(drill 1.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "Net-(J1-VBUS_1)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "41cb4573-45dd-4f91-8e40-44f9c64b898b")
+		)
+		(pad "2" thru_hole circle
+			(at 2.54 0 90)
+			(size 1.95 1.95)
+			(drill 1.3)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+5V")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "9a7f2693-a1bb-482b-a911-51f09be65e21")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/footprints/maxxi_custom.3dshapes/VN02A1500000G.wrl"
+			(offset
+				(xyz -2.769999939 -3.299999903 -3.449999996)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)

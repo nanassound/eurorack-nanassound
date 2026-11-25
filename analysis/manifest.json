@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "project": "V3.0.kicad_pro",
+  "current": "2026-10-04_1626",
+  "runs": {
+    "2026-09-22_1744": {
+      "source_hashes": {
+        "V3.0.kicad_sch": "sha256:23701968258a6742b9f373ad2ae207afef8574b1c8cb687ae9d3948b80acecf5"
+      },
+      "outputs": {
+        "schematic": "schematic.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py V3.0.kicad_sch"
+      },
+      "generated": "2026-09-22T17:44:25+03:00",
+      "pinned": false
+    },
+    "2026-09-22_2203": {
+      "source_hashes": {
+        "Maxxi.kicad_sch": "sha256:8d87a6790ce9bb036247d220092de6ae43c904fc570e479eedef980afa59df59"
+      },
+      "outputs": {
+        "schematic": "schematic.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Maxxi.kicad_sch"
+      },
+      "generated": "2026-09-22T22:03:57+03:00",
+      "pinned": false
+    },
+    "2026-09-22_2217": {
+      "source_hashes": {
+        "Maxxi.kicad_sch": "sha256:86271cb6ba9cb916aa583aeb09b4be8caf14843d4325fdf91c19ab92e74e51b4"
+      },
+      "outputs": {
+        "schematic": "schematic.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Maxxi.kicad_sch"
+      },
+      "generated": "2026-09-22T22:19:15+03:00",
+      "pinned": false
+    },
+    "2026-09-22_2351": {
+      "source_hashes": {
+        "Maxxi.kicad_sch": "sha256:2615b085587a66332b7afbe17c90e9cf611d8c732836ea9a8ca297a96e543659"
+      },
+      "outputs": {
+        "schematic": "schematic.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Maxxi.kicad_sch"
+      },
+      "generated": "2026-09-22T23:51:45+03:00",
+      "pinned": false
+    },
+    "2026-09-23_0930": {
+      "source_hashes": {
+        "Maxxi.kicad_sch": "sha256:1b558074f27e8aa4952fd5a0646bf8c495d7d5cea09eab5b5d2d1e54aa827a79",
+        "Maxxi.kicad_pcb": "sha256:32cf210e7c6e0d21e2332df49aea1d9408d7b9c130f5006f002bfe4b0cc26e58"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "pcb": "pcb.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Maxxi.kicad_sch"
+      },
+      "generated": "2026-10-04T15:26:29+03:00",
+      "pinned": false
+    },
+    "2026-10-04_1526": {
+      "source_hashes": {
+        "Maxxi.kicad_sch": "sha256:f4355b841c2411b008f9f5e183fbd14bbd54a8efc50613a245808781ee0cbfac",
+        "schematic.json": "sha256:5aa55edee651d056ca63078cd4fa838178926bfbbb8e68e1ccb59ca902f4016e",
+        "pcb.json": "sha256:5a236cf71b01cafddb522d5774ce209731798fcc30bc3ccd29288f8427ab8ff6"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "pcb": "pcb.json",
+        "emc": "emc.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Maxxi.kicad_sch"
+      },
+      "generated": "2026-10-04T15:29:44+03:00",
+      "pinned": false
+    },
+    "2026-10-04_1547": {
+      "source_hashes": {
+        "Maxxi.kicad_sch": "sha256:0abfdbb84993ca10cb5020db86f841421f0dd5e3d545b0c46aa1e0b8192cc86b"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "pcb": "pcb.json",
+        "emc": "emc.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Maxxi.kicad_sch"
+      },
+      "generated": "2026-10-04T15:49:12+03:00",
+      "pinned": false
+    },
+    "2026-10-04_1626": {
+      "source_hashes": {
+        "Maxxi.kicad_sch": "sha256:176a1b5f65b2128f135b659c385dcf03edaa6f696ab90ebbd21183f7fb21ff87"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "pcb": "pcb.json",
+        "emc": "emc.json",
+        "cross_analysis": "cross_analysis.json",
+        "thermal": "thermal.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py Maxxi.kicad_sch"
+      },
+      "generated": "2026-10-04T16:26:41+03:00",
+      "pinned": false
+    }
+  }
+}

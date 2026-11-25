@@ -1,0 +1,10 @@
+(fp_lib_table
+	(version 7)
+	(lib
+		(name "maxxi_custom")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/footprints/maxxi_custom.pretty")
+		(options "")
+		(descr "Maxxi custom footprints (USB-C, Eurorack header, terminal block, CH224K ESSOP-10, LT3015 DFN, 8x8 inductor)")
+	)
+)
