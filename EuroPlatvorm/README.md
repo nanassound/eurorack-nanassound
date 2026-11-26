@@ -38,6 +38,8 @@ The -12V rail from the eurorack bus passes to J3 pin 3 for daughter boards. The 
 
 ## Connectors
 
+![Pinout](pinout.png)
+
 ### J1: Eurorack power, 2x5
 
 | Pin | Net | Pin | Net |
